@@ -107,8 +107,8 @@
 
 <script>
 import api from '@/api'
-import Ps4Box from '@/widgets/PS4Box'
-import Ps4Detail from '@/widgets/Modal'
+import Ps4Box from '@/components/widgets/PS4Box'
+import Ps4Detail from '@/components/widgets/Modal'
 import moment from 'moment'
 // https://github.com/waseembarcha/vuejs-crud/blob/master/src/components/Products.vue
 

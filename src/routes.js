@@ -72,6 +72,12 @@ const routes = [
         meta: {description: 'Hệ thống tính giờ chơi PS', requiresAuth: true}
       },
       {
+        path: 'customers',
+        component: CustomerView,
+        name: 'Customer',
+        meta: {description: 'List customers', requiresAuth: true}
+      },
+      {
         path: 'checkout/:id',
         component: CheckOutView,
         name: 'CheckOut',
@@ -140,6 +146,12 @@ const routes = [
         component: () => import(/* webpackPrefetch: true */ './components/views/ReportNXT'),
         name: 'ReportNXT',
         meta: {description: 'Nhập xuất tồn kho', requiresAuth: true}
+      },
+      {
+        path: 'tondauky',
+        component: () => import(/* webpackPrefetch: true */ './components/views/TonDauky'),
+        name: 'TonDauKy',
+        meta: {description: 'Nhập tồn kho cuối kỳ sau kiểm kê thực tế, kiểm tra chênh lệch', requiresAuth: true}
       },
       {
         path: 'doanhthu',
